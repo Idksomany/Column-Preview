@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Outfit:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Outfit:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards{
+    display: flex;
+    width: 800px;
+    height: 475px;
+    /* padding:1rem; */
+}
+.card-one{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.card-one a{
+    color: hsl(31, 77%, 52%);
+}
+
+.card-one, .card-two, .card-three{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem 3.5rem 2.5rem 2.5rem;
+    color:white;
+    gap:1rem;
+}
+.card-one img, .card-two img, .card-three img{
+    width: 54px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+#big-text{
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 2.2rem;
+    color:white;
+}
+#small-text{
+    font-size: 12px;
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+}
+.card-two{
+    background-color: hsl(184, 100%, 22%);
+}
+.card-two a{
+    color: hsl(184, 100%, 22%);
+}
+.card-three{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.card-three a{
+    color:hsl(179, 100%, 13%);
+}
+#btn{
+    padding: 10px;
+    width: 120px;
+    font-size: 15px;
+    font-family: Lexend Deca;
+    background-color: white;
+    /* color: transparent; */
+    text-align: center;
+    border-radius: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+#btn:hover{
+    color:white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; }
+@media screen and (max-width: 650px) {
+
+    .cards{
+        flex-direction: column;
+        width: 300px;
+    }
+    .card-one{
+        border-radius: 10px 10px 0 0;
+    }
+    .card-three{
+        border-radius:  0 0 10px 10px;
+    }
+}
